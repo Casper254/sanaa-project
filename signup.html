@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<div class="container">
+			<img src="paint.jpeg" id="paint">
+			<div class="form">
+				<form class="form-group">
+					<h1 class="title">Signup</h1>
+					<br>
+					<!-- name -->
+					<input type="firstname" id="inputfirstname" class="form-control" placeholder="Your name" name="name" required autofocus><br>
+					<!-- e-mail -->
+					<input type="email" id="inputEmail" class="form-control" placeholder="EmaiAddress" name="email" required autofocus><br>
+					<!-- password -->
+					<input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required><br>
+					<input type="number" id="confirm" class="form-crtl" placeholder="Confirmation" name="confirmation" required><br>
+					<p>Who are You?</p>
+					<label class="container">Artist
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+					<br>
+					<label class="container">Buyer
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+					<br>
+					<button href="#" class="button button-accent"type="submit" button-small>create</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+		<script>
+		databaseURL: "https://sanaa-5eb44.firebaseio.com"
+		</script>
+	</body>
+</html>

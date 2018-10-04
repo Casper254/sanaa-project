@@ -1,0 +1,105 @@
+/* css for input boxex */
+input[type=text], select {
+    width: 80%;
+    padding: 12px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* Styling for send button */
+.button{
+    background-color: rgb(41, 130, 212);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.button{
+        background-color: rgb(41, 146, 182)
+        color: black; 
+        border: 2px solid #008CBA;
+}
+.button:hover {
+background-color: #008CBA;
+color: white;
+}
+/* css for textbox */
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+
+/* map card */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+    padding: 2px 8px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+height: 300px;  /* The height is 400 pixels */
+width: 100%;  /* The width is the width of the web page */
+}
+
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.container-fluid {
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    height:150px;
+ 
+}
+
+#section2 {
+    text-align: center;
+    margin: auto 80%;
+    font-size: 200%;
+}
+addres{
+    color:white;
+
+}
+#section1{
+    font-size:150%;
+}
+.title{
+    text-align: center;
+}

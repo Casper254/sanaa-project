@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css" />
+    <script src="js/jquery-3.3.1.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/js?key="></script>
+    <script src="js/contact.js"></script>
+    <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <h1 class="title">Contact Us</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>You passionate about art as we are?!</h2>
+                <h2>Don't hesitate to contact us</h2>
+
+                <form class="form-group" action="" method="post">
+                    <br>
+                    <input type="text" id="text" class="form-control" placeholder="Name" name="firstname" required autofocus>
+                    <br>
+                    <input type="text" id="inputEmail" placeholder="Email address" name="email" required autofocus>
+                    <br>
+                    <textarea placeholder="Write us"></textarea>
+                    <br>
+                    <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                    <script src='https://www.google.com/recaptcha/api.js'></script>
+                    <a href="form4.html" class="button" type="submit" button-small>Send</a>
+
+                </form>
+            </div> 
+            <!-- end of form div -->
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <!--The div element for the map -->
+                <div class="card">
+                    <div class="container">
+                        <div id="map"></div>
+                        <h4><b>visit us</b></h4>
+                        <P><a href="https://www.google.com/maps/place/Moringa+School/@-1.3004928,36.7848478,17z/data=!4m6!3m5!1s0x182f1a6bf7445dc1:0x940b62a3c8efde4c!4b1!8m2!3d-1.3005085!4d36.7846072">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a> Ngong Ln,Ngong Road,Nairobi</P>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end of container div -->
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: -1.300722, lng: 36.784538 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+    </script>
+    <!--Load the API from the specified URL
+ * The async attribute allows the browser to render the page while the API loads
+ * The key parameter will contain your own API key (which is not needed for this tutorial)
+ * The callback parameter executes the initMap() function
+ -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIDmpVNw_IZxzbQ6t9wsE1pSctdaR4RK4&callback=initMap">
+    </script>
+
+
+    <!-- link to social media -->
+
+    <div class="row" id=footer>
+        <div>
+
+            <div class="container-fluid">
+                <div id=section1 class="col-md-6">
+                    <a href=#><i class="fas fa-map-marker-alt"><P>Ngong lane,Ngong road,Nairobi,Kenya</P></i></a>
+                    <br>
+                    <a href="@sanaa"><i class="fas fa-phone-volume"><p> +254 702 503 827</P></i></a>
+                        <br>
+                    <a href="@sanaa"><i class="fas fa-envelope"><p>  info@sanaa.com</P></a></i>
+                </div>
+                <div id=section2>
+                    <a href="@sanaa">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="@sanaa">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="@sanaa">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="@sanaa">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
